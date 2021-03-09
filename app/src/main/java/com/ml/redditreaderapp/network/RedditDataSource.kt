@@ -26,4 +26,6 @@ class RedditDataSource(private val redditApi: RedditApi) :
         }
 
     }
+
+    override val keyReuseSupported: Boolean = true
 }
